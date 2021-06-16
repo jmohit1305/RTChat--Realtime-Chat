@@ -1,0 +1,51 @@
+.sidebarChat {
+  display: flex;
+  padding: 12px 14px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 30vw;
+}
+
+.sidebarChat__main:hover {
+  background-color: #ebebeb;
+}
+
+.sidebarChat__info > h2 {
+  font-size: 16px;
+  margin-bottom: 1px;
+  color: #2a2e64;
+}
+
+.sidebarChat__info > p {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.sidebarChat__info {
+  margin-left: 15px;
+  max-width: 20vw;
+}
+
+.sidebarChat__arrow {
+  margin-left: auto;
+  opacity: 0;
+  display: grid;
+  place-items: center;
+}
+
+.sidebarChat__main {
+  display: flex;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 20px;
+}
+
+.sidebarChat__main:hover > .sidebarChat__arrow {
+  margin-left: auto;
+  opacity: 1;
+}
+
+.sidebar__link {
+  text-decoration: inherit;
+  color: inherit;
+}

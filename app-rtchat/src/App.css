@@ -1,0 +1,73 @@
+
+.app {
+  display: grid;
+  place-items: center;
+
+  /* background-color: #d5dcec; */
+  background-color: #f2f6ff;
+
+  height: 100vh;
+}
+
+.app__body {
+  display: flex;
+  /* background-color: #edf4fe; */
+  /* background: rgb(106, 127, 210);
+  background: linear-gradient(
+    10deg,
+    rgba(106, 127, 210, 1) 26%,
+    rgba(178, 140, 253, 1) 100%
+  ); */
+  width: 85vw;
+  height: 85vh;
+  margin-top: -20px;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50px;
+}
+
+.file {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.file > input[type="file"] {
+  display: none;
+}
+.file > label {
+  /* font-size: 1rem; */
+  font-weight: 300;
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+  /* border-color: #d8d8d8 #d1d1d1 #bababa; */
+  /* background-color: #fff; */
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.file > label:hover {
+  border-color: #353535;
+}
+.file > label:active {
+  background-color: #f4f4f4;
+}
+.file > label > i {
+  padding-right: 5px;
+}
+@keyframes pulse {
+  0% {
+    color: #fedd56;
+  }
+  50% {
+    color: #c19b00;
+  }
+  100% {
+    color: #fedd56;
+  }
+}

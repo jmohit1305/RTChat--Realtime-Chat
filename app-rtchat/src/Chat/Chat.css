@@ -1,0 +1,152 @@
+.chat > div {
+  border-radius: 50px !important;
+}
+
+.chat {
+  display: flex;
+  flex: 0.75;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: #f2f6ff;
+  padding: 2% 2%;
+}
+
+.chat__header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.chat__headerInfo > h3 {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.chat__headerInfo > p {
+  color: gray;
+}
+
+.chat__headerRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.chat__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 30px;
+  padding-bottom: 0px;
+  background-color: white !important;
+  margin: 2% 0;
+}
+
+.chat__message {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  padding-top: 5px;
+  background-color: #eef2fd;
+  border-radius: 15px;
+  width: fit-content;
+  max-width: 50vw;
+  margin-bottom: 30px;
+  display: flex;
+  word-wrap: break-word;
+  user-select: text;
+}
+
+.chat__receiver {
+  margin-left: auto;
+  background-color: #6a1bf8;
+  color: white;
+}
+
+.chat__receiver > .chat__name {
+  color: black;
+}
+
+.chat__name {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  top: -20px;
+}
+
+div.chat__text {
+  max-width: 35vw;
+  word-wrap: break-word;
+}
+
+.chat__timestamp {
+  font-weight: bold;
+  font-size: xx-small;
+  margin-left: 10px;
+
+  min-width: fit-content;
+  margin-top: auto;
+  margin-bottom: -6px;
+}
+
+.chat__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  background-color: white !important;
+  border-radius: 50px;
+}
+
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+}
+
+.chat__footer > form > input {
+  flex: 1;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 10px;
+}
+
+.chat__footer > form > button {
+  display: none;
+}
+
+.chat__footer > .MuiSvgIcon-root {
+  color: gray;
+  padding: 12px;
+}
+
+.chat__delete {
+  position: absolute;
+  height: 0.7em;
+  display: none;
+}
+
+.chat__message:hover > .chat__delete {
+  display: unset;
+  color: gray;
+  opacity: 1;
+  height: 1.5em;
+  width: 2em;
+  z-index: 2;
+  right: 2px;
+  background-color: inherit;
+  border-radius: 25px;
+}
+
+.chat__message:hover > .chat__sidebox {
+  height: 1.5em;
+  width: 1em;
+  background-color: red;
+}

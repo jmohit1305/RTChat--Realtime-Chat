@@ -1,0 +1,92 @@
+.rec__profile {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  height: 100%;
+  /* margin-left: 1%; */
+  /* background-color: #f2f6ff; */
+  background: rgb(106, 127, 210);
+  background: linear-gradient(
+    10deg,
+    rgba(106, 127, 210, 1) 26%,
+    rgba(178, 140, 253, 1) 100%
+  );
+}
+
+.room__attachment__body {
+  /* flex: 1; */
+  overflow-y: auto;
+  margin: 2% 0;
+  height: 55%;
+  border-radius: 25px;
+}
+
+.room__attachment__header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 15%;
+  background-color: white;
+  margin-bottom: 2%;
+  border-radius: 25px;
+
+}
+
+.room__attachment__list {
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 13%;
+  border-radius: 25px;
+  background-color: white;
+  /* text-align: center; */
+  display: flex;
+}
+
+.room__attachment__list:hover {
+  background-color: #ebebeb;
+}
+
+.room__attachment__list > div {
+  margin-left: 4%;
+  height: 100%;
+  /* flex: 1; */
+  /* flex-direction: row; */
+}
+
+.filetype__icon,
+.attachment__download {
+  width: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.filetype__icon > .MuiSvgIcon-root,
+.attachment__download > .MuiSvgIcon-root {
+  font-size: 30px;
+}
+
+.attachment__name {
+  width: 50%;
+}
+
+.attachment__name > .attachment__filename {
+  width: 100%;
+  height: 50%;
+  font-weight: normal;
+  text-align: left center;
+}
+
+.attachment__name > .attachment__filesize {
+  height: 50%;
+  text-align: left center;
+  flex: 0.5;
+  width: 100%;
+  font-size: 13px;
+
+  color: grey;
+}
